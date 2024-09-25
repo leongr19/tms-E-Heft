@@ -1,0 +1,108 @@
+:root {
+    --main-background-color: rgb(190, 225, 255);
+    --main-text-color: black;
+    --head-background-color: aqua;
+    --white-background-color: white;
+    --footer-background-color: #434343;
+    --main-button-background-color: #b3b3b3;
+    --main-button-hover-background-color: #c7c7c780;
+    --main-text-color-rev: white;
+    --main-text-hover-color: rgba(0, 0, 0, 0.5);
+}
+
+.darkmode {
+    --main-background-color: rgb(108, 125, 139);
+    --main-text-color: white;
+    --head-background-color: rgb(75, 0, 55);
+    --white-background-color: rgb(97, 97, 97);
+    --footer-background-color: #272727;
+    --main-button-background-color: #525252;
+    --main-button-hover-background-color: #d0d0d0c6;
+    --main-text-color-rev: black;
+    --main-text-hover-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--main-background-color);
+}
+
+table {
+    color: var(--main-text-color);
+    width: 100%;
+    border-collapse: collapse;
+    /*border: 2px solid black;*/
+    padding: 5px;
+}
+
+table td{
+    padding: 5px;
+}
+
+table tbody a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    padding: 5px;
+}
+
+table tbody a:hover {
+    background-color: #43434346;
+    color: var(--main-text-hover-color);
+}
+
+table thead {
+    font-size: 20px;
+}
+
+.head {
+    margin-bottom: 15px;
+    background-color: var(--head-background-color);
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 70%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white-background-color);
+}
+
+/*.content a {
+    cursor: not-allowed;
+    
+}*/
+
+.footer {
+    color: var(--main-text-color);
+    background-color: var(--footer-background-color);
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.darkmodebutton {
+    background-color: var(--main-button-background-color);
+    border: none;
+    width: auto;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: var(--main-text-color);
+}
+
+.darkmodebutton:hover {
+    background-color: var(--main-button-hover-background-color);
+    color: var(--main-text-color-rev);
+}
