@@ -13,13 +13,15 @@
     function sendEmail(event) {
       event.preventDefault(); // Verhindert das Neuladen der Seite
       const feedback = document.getElementById("feedback").value;
-      
-      emailjs.send("service_mn5j5t8", "template_e4xadum", {feedback: feedback})
-      .then(function(response) {
+
+      emailjs.send("service_mn5j5t8","template_e4xadum",{
+feedback: feedback,
+});
+      /*.then(function(response) {
           alert("Vielen Dank für dein Feedback!");
       }, function(error) {
           alert("Fehler beim Versenden der E-Mail.");
-      });
+      });*/
     }
   </script>
 </head>
