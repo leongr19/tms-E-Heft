@@ -7,14 +7,14 @@
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function(){
-      emailjs.init("gMbvwgpbDIC7mxlZq");  // Benutzer-ID von EmailJS hier einfügen
+      emailjs.init("oOYNXZlNboEeMmHIF");  // Benutzer-ID von EmailJS hier einfügen
     })();
     
     function sendEmail(event) {
       event.preventDefault(); // Verhindert das Neuladen der Seite
       const feedback = document.getElementById("feedback").value;
       
-      emailjs.send("service_mn5j5t8", "template_e4xadum", {feedback: feedback})
+      emailjs.send("service_we8pigr", "template_99whxsm", {feedback: feedback})
       .then(function(response) {
           alert("Vielen Dank für dein Feedback!");
       }, function(error) {
